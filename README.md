@@ -8,8 +8,10 @@ Origin of Linux geocaching tools:  http://geo.rkkda.com/
 # Usage: 
 
 ## Build image 
-$ git clone git@github.com:mrummuka/geo-tools-docker.git
-$ docker build -t mrummuka/geo-tools-docker:v1 .
+`$ git clone git@github.com:mrummuka/geo-tools-docker.git`
+
+`$ docker build -t mrummuka/geo-tools-docker:v1 .`
+
 * This downloads, compiles and installs latest version of geo-* geocaching tools to a docker image.
 
 ### Set configuration 
@@ -17,13 +19,13 @@ $ docker build -t mrummuka/geo-tools-docker:v1 .
 
 ## Run geo-* tools 
 ### one command at a time
-$ docker run --rm mrummuka/geo-tools-docker:v1 /bin/bash "/root/bin/geo-nearest"
+`$ docker run --rm mrummuka/geo-tools-docker:v1 /bin/bash "/root/bin/geo-nearest"`
 
 ### or interactively
 #### view available commands
-$ docker run --rm -t mrummuka/geo-tools-docker:v1 /bin/sh -c "ls /root/bin"
+`$ docker run --rm -t mrummuka/geo-tools-docker:v1 /bin/sh -c "ls /root/bin"`
 
 #### run from within docker 
-$ docker run --rm -it mrummuka/geo-tools-docker:v1 "/bin/bash"
-$ geo-nearest
+`$ docker run --rm -it mrummuka/geo-tools-docker:v1 "/bin/bash"`
+`$ geo-nearest`
  
