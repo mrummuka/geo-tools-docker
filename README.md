@@ -11,7 +11,7 @@ Origin of Linux geocaching tools:  http://geo.rkkda.com/
 Downloads and installs necessary dependencies, builds geo-* tools and installs them into Docker container
 
 ### Clone repo 
-`$ git clone git@github.com:mrummuka/geo-tools-docker.git`
+`$ git clone https://github.com/mrummuka/geo-tools-docker.git`
 
 ### Set config 
 * Edit .georc config file before building image
